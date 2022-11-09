@@ -1,0 +1,120 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyCartMVC
+build_property.RootNamespace = MyCartMVC
+build_property.ProjectDir = C:\Softuraa\MyCartMVC\MyCartMVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Softuraa\MyCartMVC\MyCartMVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Customer/AddBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRkQm9va2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Customer/DeleteBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGVsZXRlQm9va2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Customer/DeleteConfirmed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGVsZXRlQ29uZmlybWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Customer/DeleteSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGVsZXRlU3VjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Customer/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Customer/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Customer/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcUmVnaXN0cmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Customer/Reglogpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcUmVnbG9ncGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Customer/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcU3VjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Customer/ViewBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcVmlld0Jvb2tpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Executive/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhlY3V0aXZlXEhvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Executive/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhlY3V0aXZlXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Executive/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhlY3V0aXZlXFJlZ2lzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Executive/Reglogpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhlY3V0aXZlXFJlZ2xvZ3BhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Executive/UpdateExecutive.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhlY3V0aXZlXFVwZGF0ZUV4ZWN1dGl2ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Executive/ViewRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhlY3V0aXZlXFZpZXdSZXF1ZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Homee/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZWVcUmVnaXN0cmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Shared/PartialExe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxFeGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Shared/PartialLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Softuraa/MyCartMVC/MyCartMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2botz73ylr

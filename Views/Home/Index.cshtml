@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+
+
+    body {
+       background-image:url(../images/h.jpg);
+       height:100vh;
+       overflow:hidden;
+        background-size: cover;
+        backdrop-filter: blur(2px);
+
+    }
+   /* body{
+        background:ghostwhite;
+    }*/
+    .img1{
+        float:right;
+        position:absolute;
+        right:20%;
+        top:37.5%
+    }
+    .img{
+
+            position:absolute;
+            left:20%;
+            top:37%
+    }
+
+        .first{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+margin-top:50px
+    }
+    .row{
+        margin-bottom:10px;
+    }
+    .p1{
+        color:white;
+       padding-left:200px;
+padding-top:433px;
+
+    }
+        .p2{
+            color:white;
+           padding-left:840px;
+           bottom:68px;
+           z-index:1;
+           position:relative
+            }
+       
+  
+</style>
+<div  style="color:black;font-size:60px" class="text-center">
+    <strong>WELCOME TO MY CART</strong>
+   
+</div>
+<div class="p1" style="font-size:50px">
+    <strong>EXECUTIVE </strong>
+</div>
+<div class="p2" style="font-size:50px">
+    <strong>CUSTOMER </strong>
+</div>
+<div class="img">
+    <a asp-action="RegLogPage" asp-controller="Executive"><img src="~/Images/pic2.jpg" height="350px" width="350px" style="border-radius:30%" /></a>
+</div>
+<div class="img1">
+    <a asp-action="RegLogPage" asp-controller="Customer"><img src="~/Images/pic1.jpg" height="350px" width="350px" style="border-radius:30%" /></a>
+</div>
+@*<div class=first>
+<div class="row">
+        <a asp-action="RegLogPage" asp-controller="Executive"><input style="padding:20px;background-color:black" type="submit" class="btn btn-primary" value="Executive" /></a>
+</div>
+<div class="rowws">
+        <a asp-action="RegLogPage" asp-controller="Customer"><input type="submit" style="padding:20px;background-color:black" class="btn btn-primary" value="Customer" /></a>
+</div>
+</div>*@

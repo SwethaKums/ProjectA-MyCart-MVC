@@ -1,0 +1,91 @@
+﻿@model MyCartMVC.Models.ExecutiveRegistration
+
+@{
+    ViewData["Title"] = "Registration";
+   // Layout = "_Layout2";
+}
+<style>
+          body {
+        background-image: url(../images/pexel.jpg);
+        height: 100vh;
+        overflow: hidden;
+        background-size: cover;
+             backdrop-filter: blur(2px);
+    }
+./*row{
+             
+ 
+   /* height:100vh;
+    backgound-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: top;
+}
+.first{
+         display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: top;
+
+}*/
+</style>
+
+<div class="first">
+<h1>Executive Registration</h1>
+</div>
+
+<div class="row">
+
+   
+    <div class="col-md-4">
+        <form asp-action="Registration" onsubmit=" validation()">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ExecutiveName" style="font-size:20px" class="control-label"></label>
+                <input asp-for="ExecutiveName" class="form-control" />
+                <span asp-validation-for="ExecutiveName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExecutiveAge" style="font-size:20px" class="control-label"></label>
+                <input asp-for="ExecutiveAge"  class="form-control" />
+                <span asp-validation-for="ExecutiveAge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" style="font-size:20px" class="control-label"></label>
+                <input asp-for="PhoneNumber" onkeypress="return validateNumber(event)" type="tel" maxlength="10" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" style="font-size:20px" class="control-label"></label>
+                <input asp-for="Password" id="pass"  class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <br/>
+            <div class="form-group">
+                <input type="submit"  onclick="validation()" value="Register" class="btn btn-primary" />
+            </div>
+        </form >
+        <a asp-action="Login" asp-controller="Executive">Login</a>
+    </div>
+   
+</div>
+<script>
+ function validateNumber(e) {
+            const pattern = /^[0-9]$/;
+            return pattern.test(e.key )
+            
+        }
+</script>
+@*<script>
+    @ViewBag.mes=document.getElementById("pass").value;
+    if(@ViewBag!=@||%||)
+</script>*@
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

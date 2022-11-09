@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+
+    body {
+        background-image: url(../images/hom.jpg);
+        height: 100vh;
+        overflow: hidden;
+        background-size: cover;
+        backdrop-filter: blur(5px);
+    }
+    /*.first {
+            display: flex;
+            flex-direction: column;
+
+            margin-top: 100px
+        }
+    */
+    .first {
+        position: absolute;
+        padding-top: 260px;
+        left: 600px;
+    }
+
+    .rows {
+        position: absolute;
+        top: 377px;
+        left: 850px;
+    }
+</style>
+
+<div class="first">
+    <a asp-action="Registration" asp-controller="Customer"><input style="height:70px;width:200px" type="submit" class="btn btn-light" value="Registration" /></a>
+
+</div>
+<div class="rows">
+    <a asp-action="Login" asp-controller="Customer"><input type="submit" style="height:70px;width:200px" class="btn btn-primary" value="Login" /></a>
+</div>

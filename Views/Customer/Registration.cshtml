@@ -1,0 +1,74 @@
+﻿@model MyCartMVC.Models.CustomerRegistration
+
+@{
+    ViewData["Title"] = "Registration";
+
+}
+<style>
+    body {
+        background-image: url(../images/pexel.jpg);
+        height: 100vh;
+        overflow: hidden;
+        background-size: cover;
+          backdrop-filter: blur(2px);
+    }
+   /* .row {
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: top;
+    }
+    
+
+    .first {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: top;
+    }*/
+</style>
+<div class="first">
+<h1>Customer Registration</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Registration">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CustomerName" style="font-size:20px" class="control-label"></label>
+                <input asp-for="CustomerName" class="form-control" />
+                <span asp-validation-for="CustomerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerAge" style="font-size:20px" class="control-label"></label>
+                <input asp-for="CustomerAge" class="form-control" />
+                <span asp-validation-for="CustomerAge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" style="font-size:20px" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Password"   style="font-size:20px" class="control-label"></label>
+                <input asp-for="Password" class="form-control"   />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            
+            <br/>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-primary" />
+            </div>
+            <a asp-action="Login" asp-controller="Customer">Login</a>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

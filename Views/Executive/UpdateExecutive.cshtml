@@ -1,0 +1,82 @@
+﻿@model IEnumerable<MyCartMVC.Models.AddBooking>
+
+    
+@{
+    ViewData["Title"] = "UpdateExecutive";
+   // Layout = "_Layout2";
+}
+<style>
+    body {
+       background-image:url(../images/Customer.jpg);
+        height: 100vh;
+        overflow: hidden;
+        background-size: cover;
+    }
+</style>
+
+<h1>Accepted Request</h1>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TimeOfPickup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExecutiveId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderId)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeOfPickup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExecutiveId)
+            </td>
+            <td>
+              @*  <a asp-action="Edit" asp-route-id="@item.OrderId">Edit</a> |*@
+               @* <a asp-action="Details" asp-route-id="@item.OrderId">Details</a> |*@
+                   @* <a asp-action="Delete" asp-route-id="@item.OrderId"><input type="submit" class="btn btn-primary" value="Delete" /></a>*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

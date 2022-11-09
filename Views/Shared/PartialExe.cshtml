@@ -1,0 +1,61 @@
+﻿@inject IHttpContextAccessor HttpContextAccessor
+@using Microsoft.AspNetCore.Http
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<ul class="navbar-nav">
+    @{
+        ViewBag.Name = @HttpContextAccessor.HttpContext.Session.GetString("Ename");
+    }
+    @if (ViewBag.Name!=null)
+    {
+        <li class="nav-item active">
+            <a id="manage" class="nav-link text-dark"  asp-controller="Home" asp-action="" title="welcome">Welcome @ViewBag.Name!</a>
+        </li>
+       @* <li>
+            <form>
+                <a  class="nav-link btn btn-link text-dark" asp-controller="Home" asp-action=""> Welcome @ViewBag.Name</a>
+            </form>
+        </li>*@
+        <li>
+            <form>
+                <button id="GotoHome" type="submit" style="background-color:white;padding-right:5px;margin-left:5px;margin-right:5px" class="nav-link btn btn-link text-dark" asp-controller="Executive" asp-action="Home"> Home</button>
+            </form>
+        </li>
+      
+      
+       <li>
+            <form>
+                <button id="view" type="submit" style="background-color:white;padding-right:5px;margin-left:5px;margin-right:5px" class="nav-link btn btn-link text-dark" asp-controller="Executive" asp-action="ViewRequest">View Request</button>
+            </form>
+        </li>
+      <li>
+             <form>
+                <button id="Booking" type="submit" style="background-color:white;padding-right:5px;margin-left:5px;margin-right:5px" class="nav-link btn btn-link text-dark" asp-controller="Executive" asp-action="BookDetails">Accepted Request</button>
+            </form>
+      </li>
+        
+      
+      
+        <li class="nav-item">
+           <form>
+                <button id="logout" type="submit" style="background-color:white;padding-right:5px;margin-left:5px;margin-right:5px" class="nav-link btn btn-link text-dark" asp-controller="Executive" asp-action="Logout">Logout</button>
+            </form>
+     </li>
+        
+    }
+    else
+    {
+    @*<li class="nav-item">
+    <a class="nav-link text-dark" id="register" asp-controller="Executive" asp-action="Registration">Register</a>
+
+    </li>
+    <li class="nav-item">
+    <a class="nav-link text-dark" id="login" asp-controller="Executive" asp-action="Login">Login</a>
+    </li>*@
+    }
+</ul>
+
+ 

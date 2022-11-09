@@ -1,0 +1,69 @@
+﻿@model MyCartMVC.Models.ExecutiveRegistration
+
+@{
+    ViewData["Title"] = "Login";
+   
+}
+
+<style>
+    .errmessage {
+        color: red;
+    }
+
+    body {`
+        background-image: url(../images/pexel.jpg);
+        height: 100vh;
+        overflow: hidden;
+        background-size: cover;
+         backdrop-filter: blur(2px);
+    }
+       
+    /*.first{
+             display: flex;
+                align-items: center;
+                justify-content: center;
+                background-position: top;
+
+    }*/
+
+</style>
+<div class="first">
+<h1>Executive Login</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="ExecutiveName" style="font-size:20px" class="control-label"></label>
+                <input asp-for="ExecutiveName" class="form-control" />
+                <span asp-validation-for="ExecutiveName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password" style="font-size:20px" class="control-label"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <br/>
+            <div class="form-group">
+                <input type="submit"  value="Login" class="btn btn-primary" />
+            </div>
+            @if (ViewBag.FailureMessage != null)
+            {
+                <p class="errmessage">@ViewBag.FailureMessage</p>
+            }
+        </form>
+        <a asp-action="Registration" asp-controller="Executive">Registration</a>
+
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
